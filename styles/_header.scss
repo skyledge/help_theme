@@ -94,15 +94,14 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  min-height: $margin-sm*4;
   background-color: white;
   border-bottom-color: $color-primary-50;
   border-bottom-style: solid;
   border-bottom-width: 0px;
   transition: background-color .3s ease-in-out,  border-bottom .4s ease-in-out;
-  
-  &.go-dark-bg {
-    background-color: #fafafa;
-  }
+
+
   
   &.underline {
     border-bottom-color: $color-primary-50;
@@ -114,7 +113,7 @@ header {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    color: white;
+    color: white !important;
 
     &.primary {
       color: #212a39;
@@ -140,6 +139,12 @@ header {
         text-decoration: none;
       }
     }
+  }
+
+    
+  &.go-dark-bg {
+    background-color: $color-primary;
+    color: $color-offwhite !important;
   }
 }
 

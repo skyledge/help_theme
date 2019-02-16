@@ -1,22 +1,24 @@
-<footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+<header class="underline brand go-dark-bg">
+  <div class="constrained">
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
+    <div class="logo">      
+      <span class="understated">
+        <a class="stealth" href="http://skyledge.com/">
+          Sky Ledge
+        </a>
+      </span>
     </div>
+    <span class="filler"></span>
+    <nav>
+      <ul>
+          <li>
+            <a href="https://skyledge.com/stories" class="link go-dark-txt">Stories and Solutions</a>
+          </li>
+          <li>
+            <a href="https://skyledge.com/contact" class="link go-dark-txt">Contact</a>
+          </li>
+      </ul>
+    </nav>
+
   </div>
-</footer>
+</header>

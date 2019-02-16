@@ -612,15 +612,12 @@ header {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  min-height: 128px;
   background-color: white;
   border-bottom-color: #e7e8ea;
   border-bottom-style: solid;
   border-bottom-width: 0px;
   transition: background-color .3s ease-in-out,  border-bottom .4s ease-in-out;
-}
-
-header.go-dark-bg {
-  background-color: #fafafa;
 }
 
 header.underline {
@@ -633,7 +630,7 @@ header div.logo {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  color: white;
+  color: white !important;
 }
 
 header div.logo.primary {
@@ -660,6 +657,11 @@ header div.logo span:first-child.understated {
 
 header div.logo span a {
   text-decoration: none;
+}
+
+header.go-dark-bg {
+  background-color: #212a39;
+  color: #fafafa !important;
 }
 
 .is-active-nav {
