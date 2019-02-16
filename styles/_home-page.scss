@@ -15,12 +15,12 @@
 
 // Sky Ledge Implementation
 
-.category-group {
+.collection {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 
-  .category-block {
+  .collection-item {
     display: flex;
     flex-direction: column;
     align-items: center;

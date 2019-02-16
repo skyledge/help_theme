@@ -10,11 +10,11 @@
   </div>
 </section>
 
-<section class="category-group brand">
+<section class="collection brand">
   {{#each categories}}
       {{#isnt name 'General'}}
         <a class="stealth" href='{{url}}'>
-          <div class="category-block">
+          <div class="collection-item">
             <div class="img-container">
               {{#is name 'Getting Started'}}
                 <img src="{{asset 'category_getting_started.svg'}}">
@@ -31,7 +31,7 @@
   {{/each}}
   {{#if help_center.community_enabled}}
     {{#link 'community' class='community-link'}}
-        <div class="category-block">
+        <div class="collection-item">
           <div class="img-container">
               <img src="{{asset 'category_practicum.svg'}}">
           </div>
