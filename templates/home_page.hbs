@@ -1,6 +1,11 @@
-<section class="section hero">
+<section class="section hero brand">
+  <section class="unit darkmode">
+    <h1>Get Started</h1>
+    <p>Sky Ledge is easy to learn. Get powerful insights to your organisation in no time. We're also here to help you along your journey.</p>
+  </section>
   <div class="hero-inner">
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
+    {{search submit=false instant=settings.instant_search 
+      placeholder=settings.search_placeholder class='search search-full'}}
   </div>
 </section>
 
@@ -13,7 +18,7 @@
             <li class="blocks-item">
               <a href='{{url}}' class="blocks-item-link">
                 <h4 class="blocks-item-title">{{name}}</h4>
-                <p class="blocks-item-description">{{excerpt description}}</p>
+                <p class="blocks-item-description brand">{{excerpt description}}</p>
               </a>
             </li>
           {{else}}
@@ -23,7 +28,7 @@
                   <h4 class="blocks-item-title">
                     {{name}}
                   </h4>
-                  <p class="blocks-item-description">{{excerpt description}}</p>
+                  <p class="blocks-item-description brand">{{excerpt description}}</p>
                 </a>
               </li>
             {{/each}}
