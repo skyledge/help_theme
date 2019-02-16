@@ -1145,12 +1145,13 @@ header div.logo span a {
   min-height: 368px;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
 }
 
 .category-group .category-block:hover {
   cursor: pointer;
   background-color: #fafafa;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.29) !important;
 }
 
 .category-group .category-block:hover .img-container img {
