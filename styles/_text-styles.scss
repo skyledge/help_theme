@@ -1,0 +1,26 @@
+section.unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $margin-sm*3;
+    padding: 0 $margin-sm;
+    margin: 0 auto $margin-sm;
+    width: 100%;
+    text-align: center;
+
+    h1, h2, h3, p {
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: $margin-sm/2;
+    }
+
+    p {
+        max-width: $max-brand-element-width;
+    }
+}
+
+.darkmode {
+    color: $text_color_darkmode;
+}
