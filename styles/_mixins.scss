@@ -90,3 +90,92 @@
     padding: 0 15px;
   }
 }
+
+
+
+// Sky Ledge Implementation
+
+@mixin sl-break-xs {
+  @media (max-width: $xs-max) {
+    @content;
+  }
+}
+@mixin sl-break-lt-sm {
+  @media (max-width: $xs-max) {
+    @content;
+  }
+}
+@mixin sl-break-lt-md {
+  @media (max-width: $sm-max) {
+    @content;
+  }
+}
+@mixin sl-break-lt-mbpro {
+  @media (max-width: $mbpro-max) {
+    @content;
+  }
+}
+@mixin sl-break-lt-lg {
+  @media (max-width: $md-max) {
+    @content;
+  }
+}
+@mixin sl-break-lt-xl {
+  @media (max-width: $lg-max) {
+    @content;
+  }
+}
+@mixin sl-break-gt-xs {
+  @media (min-width: $sm-min) {
+    @content;
+  }
+}
+@mixin sl-break-gt-sm {
+  @media (min-width: $md-min) {
+    @content;
+  }
+}
+@mixin sl-break-gt-md {
+  @media (min-width: $lg-min) {
+    @content;
+  }
+}
+@mixin sl-break-gt-mbpro {
+  @media (min-width: $mbpro-min) {
+    @content;
+  }
+}
+@mixin sl-break-gt-lg {
+  @media (min-width: $xl-min) {
+    @content;
+  }
+}
+@mixin sl-break-gt-xl {
+  @media (min-width: $xl-max) {
+    @content;
+  }
+}
+
+@mixin sl-break-sm {
+  @media screen and (min-width: $sm-min) and (max-width: $sm-max) {
+    @content;
+  }
+}
+
+@mixin sl-break-md {
+  @media screen and (min-width: $md-min) and (max-width: $md-max) {
+    @content;
+  }
+}
+
+@mixin sl-break-lg {
+  @media screen and (min-width: $lg-min) and (max-width: $lg-max) {
+    @content;
+  }
+}
+
+@mixin sl-break-xl {
+  @media screen and (min-width: $xl-min) and (max-width: $xl-max) {
+    @content;
+  }
+}
