@@ -8,8 +8,8 @@
   padding: 0;
 
   li {
-    color: $secondary-text-color;
     display: inline;
+    color: inherit;
     font-weight: $font-weight-light;
     font-size: $font-size-small;
     max-width: 450px;
@@ -19,9 +19,6 @@
     + li::before {
       content: ">";
       margin: 0 4px;
-    }
-    a:visited {
-      color: $link_color;
     }
   }
 }

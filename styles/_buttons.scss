@@ -91,26 +91,7 @@
 // Sky Ledge Implementation
 
 a.link {
-  display: inline-block;
-  padding: $margin-sm/6 0;
-  text-align: center;
-  transition: color .25s ease-in-out;
-  color: $color-primary !important;
-
-  &.go-dark-txt {
-    color: white !important;
-  }
-
-  &:hover {
-    border-bottom-color: $color-primary-900;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    text-decoration: none;
-  }
-
-  &.go-dark-txt:hover {
-    border-bottom-color: $body-bg;
-  }
+  @include aLink();
 }
 
 button, .a-btn {

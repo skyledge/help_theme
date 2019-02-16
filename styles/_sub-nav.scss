@@ -2,14 +2,24 @@
   @include tablet {
     align-items: baseline;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &.darkmode {
+    color: white;
+    background-color: $color-primary;
+
+    .breadcrumbs, .breadcrumbs a {
+      color: white !important;
+    }
   }
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
   min-height: 50px;
-  padding-bottom: 15px;
+  padding: $margin-sm/2 $margin-sm 0;
 
   //Inner pages search field
   input[type="search"] {
