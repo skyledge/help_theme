@@ -8,6 +8,14 @@ section.unit {
     width: 100%;
     text-align: center;
 
+    &.subtitle {
+        margin: $margin-sm*3 0 $margin-sm;
+        p {
+            margin-top: $margin-sm/4;
+            max-width: $max-page-width/4;
+        }
+    }
+
     h1, h2, h3, p {
         margin: 0;
     }
@@ -22,5 +30,5 @@ section.unit {
 }
 
 .darkmode {
-    color: $text_color_darkmode;
+    color: $text_color_darkmode !important;
 }

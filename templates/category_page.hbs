@@ -1,9 +1,26 @@
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
+  <nav class="sub-nav darkmode brand">
     {{breadcrumbs}}
     {{search submit=false}}
   </nav>
+<section class="section hero brand">
+  <section class="unit darkmode">
+    <h1>{{category.name}}</h1>
+    <p>{{category.description}}</p>
+  </section>
+</section>
+
+              {{#is category.name 'Getting Started'}}
+              <div class="guide-page brand">
+                <section class="unit subtitle">
+                    <h3>Be Up & Running</h3>
+                    <p>Get in and make yourself comfortable with the platform.</p>
+                </section>
+              </div>
+              {{/is}}
+
+<div class="container-divider"></div>
+<div class="container">
+
 
   <div class="category-container">
     <div class="category-content">

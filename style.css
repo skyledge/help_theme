@@ -866,8 +866,8 @@ header.go-dark-bg {
 }
 
 .breadcrumbs li {
-  color: lighten($text_color, 20%);
   display: inline;
+  color: inherit;
   font-weight: 300;
   font-size: 13px;
   max-width: 450px;
@@ -878,10 +878,6 @@ header.go-dark-bg {
 .breadcrumbs li + li::before {
   content: ">";
   margin: 0 4px;
-}
-
-.breadcrumbs li a:visited {
-  color: $link_color;
 }
 
 /***** Search field *****/
@@ -1008,16 +1004,26 @@ header.go-dark-bg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
   min-height: 50px;
-  padding-bottom: 15px;
+  padding: 16px 32px 0;
 }
 
 @media (min-width: 768px) {
   .sub-nav {
     align-items: baseline;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
+.sub-nav.darkmode {
+  color: white;
+  background-color: #212a39;
+}
+
+.sub-nav.darkmode .breadcrumbs, .sub-nav.darkmode .breadcrumbs a {
+  color: white !important;
 }
 
 @media (min-width: 768px) {
@@ -1426,6 +1432,13 @@ header.go-dark-bg {
 .icon-star::before {
   color: $brand_color;
   font-size: 18px;
+}
+
+.guide-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
 }
 
 /***** Section pages *****/
@@ -4369,6 +4382,15 @@ section.unit {
   text-align: center;
 }
 
+section.unit.subtitle {
+  margin: 96px 0 32px;
+}
+
+section.unit.subtitle p {
+  margin-top: 8px;
+  max-width: 360px;
+}
+
 section.unit h1, section.unit h2, section.unit h3, section.unit p {
   margin: 0;
 }
@@ -4382,5 +4404,5 @@ section.unit p {
 }
 
 .darkmode {
-  color: $text_color_darkmode;
+  color: $text_color_darkmode !important;
 }

@@ -56,3 +56,13 @@
   color: $brand_color;
   font-size: 18px;
 }
+
+
+// Sky Ledge Implementation
+
+.guide-page {
+  display: flex;
+  flex-direction: column;
+  max-width: $max-page-width;
+  width: 100%;
+}
