@@ -13,6 +13,72 @@
   text-align: center;
 }
 
+// Sky Ledge Implementation
+
+.category-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .category-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: $margin-sm/2;
+    // max-width: 308px;
+    max-width: 240px;
+    padding: $margin-sm/2;
+    width: 100%;
+    min-height: 368px;
+
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    transition: background-color .25s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-offwhite;
+
+        .img-container img {
+            transform: scale(1.07);
+        }
+        .title {
+            font-weight: $font-weight-semibold;
+            color: $color-primary-400;
+        }
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 208px;
+        width: 300px;
+        img {
+            min-height: 100px;
+            height: 100%;
+            width: auto;
+            max-width: 300px;
+            transition: transform .5s ease-in-out;
+        }
+    }
+
+    .title {
+        max-width: 272px;
+        margin: $margin-sm/1.5 0 $margin-sm/2;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 0;
+    }
+  }
+}
+
+// End Sky Ledge Implementation
+
 /***** Promoted articles *****/
 
 .promoted-articles {
