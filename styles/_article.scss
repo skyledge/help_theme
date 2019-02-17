@@ -9,7 +9,7 @@
     flex: 1 0 66%;
     max-width: 66%;
     min-width: 640px;
-    padding: 0 30px;
+    // padding: 0 30px;  // reinstate when we reintroduce sidebar
   }
 
   flex: 1 0 auto; //Explicit values needed whith flex-direction: column for IE11
@@ -43,6 +43,7 @@
   }
 
   &-author {
+    
     margin-bottom: 10px;
   }
 
@@ -58,6 +59,8 @@
       left: -5px;
       vertical-align: baseline;
     }
+
+    margin: 0;
   }
 
   [role="button"] {
@@ -67,6 +70,7 @@
   }
 
   &-info {
+    @include article-typography();
     max-width: 100%;
   }
 
@@ -163,7 +167,7 @@
 
     &::before {
       @extend .icon;
-      font-size: 8px;
+      // font-size: 8px;
       margin-right: 10px;
 
       [dir="rtl"] & {
@@ -233,15 +237,21 @@
     }
   }
 
-  &-unsubscribe {
+  &-unsubscribe, &-subscribe {
+    @include brand-typography();
     background-color: $button-color;
     color: $brand_text_color;
     text-decoration: none;
+    padding: $margin-sm/2 $margin-sm;
 
     &:hover {
       background-color: $hover-button-color;
       border-color: $hover-button-color;
     }
+  }
+  &-subscribe {
+    background-color: $brand-text_color;
+    color: $button-color;
   }
 }
 
@@ -272,6 +282,7 @@
 .related-articles {
   h3 {
     font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
     margin: 20px 0;
   }
 
