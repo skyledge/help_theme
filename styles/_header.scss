@@ -174,19 +174,23 @@ header {
       border-bottom-width: 1px;
     }
     
+    .filler {
+      flex: 1 1 auto;
+    }
 
     @include sl-break-lt-md {
-      justify-content: space-around;
+      // justify-content: space-around;
       flex-direction: column;
+      justify-content: center;
       // padding: $margin-sm/2;
+
+      .filler {
+        display: none;
+      }
     }
 
     @include sl-break-xs {
       padding: 0;
-    }
-
-    .filler {
-      flex: 1 1 auto;
     }
   
     nav {
