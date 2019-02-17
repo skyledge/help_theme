@@ -9,21 +9,86 @@
   </section>
 </section>
 
-              {{#is category.name 'Getting Started'}}
-              <div class="guide-page brand">
-                <section class="unit subtitle">
-                    <h3>Be Up & Running</h3>
-                    <p>Get in and make yourself comfortable with the platform.</p>
-                </section>
+
+
+{{#is category.name 'Getting Started'}}
+  <div class="guide-page brand">
+    {{#each sections}}
+    <section class="unit subtitle">
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+    </section>
+    <section class="collection brand">
+        {{#if articles}}
+          {{#each articles}}
+            <a class="stealth" href='{{url}}'>
+                <div class="collection-item no-description">
+                  <div class="img-container">
+                    {{#is title 'Introduction to Sky Ledge'}}
+                      <img src="{{asset 'intro.svg'}}">
+                    {{/is}}
+                    {{#is title 'What impact can I deliver with Sky Ledge?'}}
+                      <img src="{{asset 'ideas.svg'}}">
+                    {{/is}}
+                    {{#is title 'Creating an Account'}}
+                      <img src="{{asset 'create-account.svg'}}">
+                    {{/is}}
+                    {{#is title 'Getting to know your Launchpad'}}
+                      <img src="{{asset 'launchpad.svg'}}">
+                    {{/is}}
+                    {{#is title 'Exploring your first Control Room'}}
+                      <img src="{{asset 'view-cr.svg'}}">
+                    {{/is}}
+                    {{#is title 'What are Event Types?'}}
+                      <img src="{{asset 'ets.svg'}}">
+                    {{/is}}
+                    {{#is title 'Create your first Control Room'}}
+                      <img src="{{asset 'create-cr.svg'}}">
+                    {{/is}}
+                  </div>
+                  <h4 class="title">{{title}}</h4>
+                  {{!-- <p>{{excerpt description}}</p> --}}
+                </div>
+              </a>
+          {{/each}}
+          {{/if}}
+    </section>
+    {{/each}}
+  </div>
+{{/is}}
+
+{{#isnt category.name 'Getting Started'}}
+  {{#isnt category.name 'Knowledge Base'}}
+  <div class="guide-page brand">
+
+    <section class="collection brand">
+      {{#each sections}}
+        <a class="stealth" href='{{url}}'>
+            <div class="collection-item">
+              <div class="img-container">
+                {{#is name 'Getting Started'}}
+                  <img src="{{asset 'category_getting_started.svg'}}">
+                {{/is}}
+                {{#is name 'Knowledge Base'}}
+                  <img src="{{asset 'category_kb.svg'}}">
+                {{/is}}
               </div>
-              {{/is}}
+              <h4 class="title">{{name}}</h4>
+              <p>{{description}}</p>
+            </div>
+          </a>
+      {{/each}}
+    </section>
+  </div>
+  {{/isnt}}
+{{/isnt}}
 
-<div class="container-divider"></div>
-<div class="container">
+{{#isnt category.name 'Getting Started'}}
+<div class="container brand">
 
 
-  <div class="category-container">
-    <div class="category-content">
+  <div class="collectioncontainer">
+    <div class="collectioncontent">
       <header class="page-header">
         <h1>{{category.name}}</h1>
         {{#if category.description}}
@@ -63,7 +128,7 @@
             {{/if}}
           </section>
         {{else}}
-          <i class="category-empty">
+          <i class="collectionempty">
             <a href="{{category.url}}">{{t 'empty'}}</a>
           </i>
         {{/each}}
@@ -71,3 +136,4 @@
     </div>
   </div>
 </div>
+{{/isnt}}

@@ -27,10 +27,14 @@
     text-align: center;
     margin: $margin-sm/2;
     // max-width: 308px;
-    max-width: 240px;
+    max-width: 256px;
     padding: $margin-sm/2;
     width: 100%;
     min-height: 368px;
+
+    &.no-description {
+      min-height: 324px;
+    }
 
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;

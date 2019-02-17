@@ -102,6 +102,9 @@ header {
   transition: background-color .3s ease-in-out,  border-bottom .4s ease-in-out;
 
 
+  &.page-header {
+    padding: 0;
+  }
   
   &.underline {
     border-bottom-color: $color-primary-50;
