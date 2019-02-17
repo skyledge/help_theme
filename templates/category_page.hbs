@@ -1,8 +1,8 @@
-  <nav class="sub-nav darkmode brand">
+  <nav class="sub-nav darkmode">
     {{breadcrumbs}}
     {{search submit=false}}
   </nav>
-<section class="section hero brand">
+<section class="section hero">
   <section class="unit darkmode">
     <h1>{{category.name}}</h1>
     <p>{{category.description}}</p>
@@ -12,13 +12,13 @@
 
 
 {{#is category.name 'Getting Started'}}
-  <div class="guide-page brand">
+  <div class="guide-page">
     {{#each sections}}
     <section class="unit subtitle">
         <h3>{{name}}</h3>
         <p>{{description}}</p>
     </section>
-    <section class="collection brand">
+    <section class="collection">
         {{#if articles}}
           {{#each articles}}
             <a class="stealth" href='{{url}}'>
@@ -59,9 +59,9 @@
 
 {{#isnt category.name 'Getting Started'}}
   {{#isnt category.name 'Knowledge Base'}}
-  <div class="guide-page brand">
+  <div class="guide-page">
 
-    <section class="collection brand">
+    <section class="collection">
       {{#each sections}}
         <a class="stealth" href='{{url}}'>
             <div class="collection-item">
@@ -84,7 +84,7 @@
 {{/isnt}}
 
 {{#isnt category.name 'Getting Started'}}
-<div class="container brand">
+<div class="container">
 
 
   <div class="collectioncontainer">

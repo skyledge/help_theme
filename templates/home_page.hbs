@@ -1,4 +1,4 @@
-<section class="section hero brand">
+<section class="section hero">
   <section class="unit darkmode">
     <h1>Experience Control</h1>
     <p>Sky Ledge is easy to learn. Get powerful insights to your organisation in no time.
@@ -10,39 +10,43 @@
   </div>
 </section>
 
-<section class="collection brand">
-  {{#each categories}}
-      {{#isnt name 'General'}}
-        <a class="stealth" href='{{url}}'>
-          <div class="collection-item">
-            <div class="img-container">
-              {{#is name 'Getting Started'}}
-                <img src="{{asset 'category_getting_started.svg'}}">
-              {{/is}}
-              {{#is name 'Knowledge Base'}}
-                <img src="{{asset 'category_kb.svg'}}">
-              {{/is}}
+<section class="homeposition">
+
+  <div class="collection">
+      {{#each categories}}
+          {{#isnt name 'General'}}
+            <a class="stealth" href='{{url}}'>
+              <div class="collection-item">
+                <div class="img-container">
+                  {{#is name 'Getting Started'}}
+                    <img src="{{asset 'category_getting_started.svg'}}">
+                  {{/is}}
+                  {{#is name 'Knowledge Base'}}
+                    <img src="{{asset 'category_kb.svg'}}">
+                  {{/is}}
+                </div>
+                <h4 class="title">{{name}}</h4>
+                <p>{{excerpt description}}</p>
+              </div>
+            </a>
+          {{/isnt}}
+      {{/each}}
+      {{#if help_center.community_enabled}}
+        {{#link 'community' class='community-link'}}
+            <div class="collection-item">
+              <div class="img-container">
+                  <img src="{{asset 'category_practicum.svg'}}">
+              </div>
+              <h4 class="title">{{t 'community'}}</h4>
+              <p>{{t 'join_conversation'}}</p>
             </div>
-            <h4 class="title">{{name}}</h4>
-            <p>{{excerpt description}}</p>
-          </div>
-        </a>
-      {{/isnt}}
-  {{/each}}
-  {{#if help_center.community_enabled}}
-    {{#link 'community' class='community-link'}}
-        <div class="collection-item">
-          <div class="img-container">
-              <img src="{{asset 'category_practicum.svg'}}">
-          </div>
-          <h4 class="title">{{t 'community'}}</h4>
-          <p>{{t 'join_conversation'}}</p>
-        </div>
-    {{/link}}
-  {{/if}}
+        {{/link}}
+      {{/if}}
+  </div>
+
 </section>
 
-<div class="container">
+{{!-- <div class="container">
   <section class="section knowledge-base">
 
     {{#if promoted_articles}}
@@ -64,7 +68,7 @@
       </section>
     {{/if}}
   </section>
-  {{!-- {{#if help_center.community_enabled}}
+  {{#if help_center.community_enabled}}
     <section class="section community">
       <h2>{{t 'community'}}</h2>
       {{#link 'community' class='community-link'}}
@@ -73,11 +77,11 @@
 
       <div class="community-image"></div>
     </section>
-  {{/if}} --}}
+  {{/if}}
 
-  {{!-- <section class="section activity">
+  <section class="section activity">
     {{#if settings.show_recent_activity}}
       {{recent_activity}}
     {{/if}}
-  </section> --}}
-</div>
+  </section>
+</div> --}}

@@ -15,6 +15,12 @@
 
 // Sky Ledge Implementation
 
+.homeposition {
+  height: 100%;
+  align-items: center;
+  margin-bottom: $margin-sm*2;
+}
+
 .collection {
   display: flex;
   flex-flow: row wrap;

@@ -100,7 +100,7 @@
           {{/if}}
         </div>
         {{#with article}}
-          <div class="article-votes brand">
+          <div class="article-votes">
             <span class="article-votes-question">{{t 'was_this_article_helpful'}}</span>
             <div class="article-votes-controls" role='radiogroup'>
               {{vote 'up' role='radio' class='button article-vote article-vote-up'}}
@@ -112,15 +112,15 @@
           </div>
         {{/with}}
 
-        <div class="article-more-questions brand">
+        <div class="article-more-questions">
           {{request_callout}}
         </div>
-        <div class="article-return-to-top brand">
+        <div class="article-return-to-top">
           <a href="#article-container">{{t 'return_to_top'}}<span class="icon-arrow-up"></span></a>
         </div>
       </footer>
 
-      <section class="article-relatives brand">
+      <section class="article-relatives">
         {{#if settings.show_recently_viewed_articles}}
           {{recent_articles}}
         {{/if}}
