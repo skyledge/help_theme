@@ -182,7 +182,7 @@
       "type": "checkbox",
       "description": "article_comments_description",
       "label": "article_comments_label",
-      "value": true
+      "value": false
     }, 
     { "identifier": "show_follow_article",
       "type": "checkbox",
