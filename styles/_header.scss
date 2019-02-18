@@ -234,6 +234,10 @@ header.primary-nav {
       
       @include sl-break-lt-md {
         display: none;
+
+        &.sub-nav {
+          display: flex;
+        }
       }
     }
   }
