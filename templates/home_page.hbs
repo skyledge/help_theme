@@ -12,6 +12,7 @@
 
 <section class="homeposition">
 
+<h3 style="margin-bottom:32px;">Where do you want to go?</h3>
   <div class="collection">
       {{#each categories}}
           {{#isnt name 'General'}}
@@ -32,17 +33,19 @@
           {{/isnt}}
       {{/each}}
       {{#if help_center.community_enabled}}
-        {{#link 'community' class='community-link'}}
+        {{#link 'community' class='community-link stealth'}}
             <div class="collection-item">
               <div class="img-container">
                   <img src="{{asset 'category_practicum.svg'}}">
               </div>
               <h4 class="title">{{t 'community'}}</h4>
-              <p>{{t 'join_conversation'}}</p>
+              <p>Join the conversation. Collaborate and get inspired by Sky Ledgers around the world. </p>
             </div>
         {{/link}}
       {{/if}}
   </div>
+
+  <p class="still-need-help">Got a question? {{#link 'new_request' class='raise-ticket stealth'}}Submit a request.{{/link}} We love to help!</p>
 
 </section>
 
