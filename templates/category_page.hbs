@@ -1,10 +1,12 @@
+<div class="sub-nav-wrapper darkmode">
   <nav class="sub-nav darkmode">
     {{breadcrumbs}}
     {{search submit=false}}
   </nav>
+</div>  
 <section class="section hero">
   <section class="unit darkmode">
-    <h1>{{category.name}}</h1>
+    <h1  class="major-page-title">{{category.name}}</h1>
     <p>{{category.description}}</p>
   </section>
 </section>
@@ -89,12 +91,12 @@
 
   <div class="collectioncontainer">
     <div class="collectioncontent">
-      <header class="page-header">
+      {{!-- <header class="page-header">
         <h1>{{category.name}}</h1>
         {{#if category.description}}
           <p class="page-header-description">{{category.description}}</p>
         {{/if}}
-      </header>
+      </header> --}}
 
       <div class="section-tree">
         {{#each sections}}

@@ -1,9 +1,16 @@
-<div class="container-divider"></div>
+{{!-- <div class="container-divider"></div> --}}
+<div class="overarch">
+  <header class="primary-nav">
+      <div class="constrained">
+        <nav class="sub-nav tight">
+          {{breadcrumbs}}
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </nav>
+      </div>
+
+  </header>
+</div>
 <div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search submit=false}}
-  </nav>
 
   <div class="section-container">
     <section class="section-content">
@@ -42,5 +49,7 @@
 
       {{pagination}}
     </section>
+      <p class="still-need-help">Got a question? {{#link 'new_request' class='raise-ticket stealth'}}Submit a request.{{/link}} We love to help!</p>
+
   </div>
 </div>
