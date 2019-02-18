@@ -87,10 +87,6 @@
   &-info {
     @include article-typography();
     max-width: 100%;
-
-    $max-article-content-width: 900px;
-    $article-and-table-border-width: 4px;
-    $color-article-accent: $color-accent;
     
     article.kb {
       display: flex;
@@ -418,3 +414,37 @@
   }
 }
 
+.yay-img {
+  width: 260px !important; 
+  height: 230px !important;
+  border: none;
+}
+
+table.basic-table {
+  // font-family: "Lucida Console", Monaco, monospace;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%;
+  border-bottom: $article-and-table-border-width solid $color-primary-400;
+  margin: $margin-sm/2 0;
+  
+  thead {
+      font-family: $heading_font;
+      font-size: 16px;
+      
+      background-color: $color-primary-300;
+      color: white;
+      th {
+          font-size: 15px;
+          font-weight: bold;
+      }
+  }
+  tr:nth-child(even) {
+      background: $color-offwhite;
+  }
+  td, th {
+      border: 2px solid #FFFFFF;
+      padding: $margin-sm/3;
+  }
+}

@@ -1,10 +1,8 @@
 {
-  "name": "Copenhagen",
+  "name": "Sky Ledge Help Theme",
   "author": "Sky Ledge",
   "version": "1.4.17",
-  "frameworkVersion": "2.0",
   "api_version": 1,
-  "defaultLocale": "en",
   "settings": [{
     "label": "colors_group_label",
     "variables": [{
