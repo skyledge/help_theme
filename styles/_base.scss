@@ -13,6 +13,7 @@
   line-height: 1.3;
 }
 @mixin article-typography {
+  font-family: $text_font;
   font-weight: $font-weight-regular;
   font-size: 16px;
   line-height: 26px;
@@ -64,6 +65,16 @@ h4 {
   font-size: 18px; 
   font-weight: $font-weight-medium;
   margin: $margin-sm/2 0;
+}
+
+@mixin sl-h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: $font-weight-bold;
+}
+
+.major-page-title {
+  font-weight: $font-weight-semibold;
 }
 
 .brand {
