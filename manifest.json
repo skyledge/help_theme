@@ -1,10 +1,10 @@
 {
   "name": "Copenhagen",
   "author": "Sky Ledge",
-  "version": "1.1",
+  "version": "1.4.17",
   "frameworkVersion": "2.0",
   "api_version": 1,
-  "default_locale": "en-us",
+  "defaultLocale": "en",
   "settings": [{
     "label": "colors_group_label",
     "variables": [{
