@@ -88,6 +88,13 @@
 .form footer {
   margin-top: 40px;
   padding-top: 30px;
+
+  input[type="submit"] {
+    @include cta-btn();
+    height: 52px !important;
+    padding: 0 !important;
+    width: 100%;
+  }
 }
 
 .form footer a {
