@@ -33,14 +33,14 @@
 
     <article class="article">
       <header class="article-header tight">
-        <h1 title="{{article.title}}" class="article-title">
+        <h1 title="{{article.title}}" class="article-title  major-page-title">
           {{article.title}}
           {{#if article.internal}}
             <span class="icon-lock" title="{{t 'internal'}}"></span>
           {{/if}}
         </h1>
 
-        <div class="article-author">
+        {{!-- <div class="article-author">
           {{#if settings.show_article_author}}
             <div class="avatar article-avatar">
               {{#if article.author.agent}}
@@ -69,7 +69,7 @@
 
         {{#if settings.show_follow_article}}
           {{subscribe}}
-        {{/if}}
+        {{/if}} --}}
       </header>
 
       <section class="article-info">
