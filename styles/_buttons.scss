@@ -95,16 +95,16 @@ a.link {
 }
 
 button, .a-btn {
-  display: inline-block;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  margin: 0;
+  display: inline-block !important;
+  border: none !important;
+  padding: 1rem 2rem !important;
+  border-radius: 5px !important;
+  margin: 0 !important;
   text-decoration: none !important;
-  background: $color-accent;
-  color: $color-offwhite;
-  font-size: 16px;
-  font-weight: $font-weight-semibold;
+  background: $color-accent !important;
+  color: $color-offwhite !important;
+  font-size: 16px !important;
+  font-weight: $font-weight-semibold !important;
   cursor: pointer;
   text-align: center;
   transition: box-shadow 250ms ease-in-out, 
@@ -113,17 +113,17 @@ button, .a-btn {
   -moz-appearance: none;
 
 
-  box-shadow: 0 0 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 0 rgba(0,0,0,0.3) !important;
   
+  &:hover,
+  &:focus {
+    // background: $color-accent-darker;
+    // border-bottom: 5px solid $color-primary-300;
+    
+    box-shadow: 0 0 15px rgba(0,0,0,0.2) !important;
+  }
 }
 
-button:hover,
-button:focus {
-  // background: $color-accent-darker;
-  // border-bottom: 5px solid $color-primary-300;
-  
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
 button:focus {
   outline: none;
