@@ -26,12 +26,17 @@ body {
   background-color: $background_color;
   color: $text_color;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 
   @include brand-typography();
 
   > main {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
     height: 100%;
     @include desktop {
       min-height: 65vh;
@@ -67,6 +72,7 @@ h4 {
 
 .tight {
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 
