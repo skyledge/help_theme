@@ -157,6 +157,10 @@
     text-align: center;
   }
 
+  &-votes-controls {
+    margin: $margin-sm/2 0;
+  }
+
   &-vote {
     background: transparent;
     border: 1px solid $brand_color;
@@ -213,8 +217,7 @@
 
   &-return-to-top {
     @include desktop { display: none; }
-
-    border-top: 1px solid $border-color;
+    text-align: center;
 
     a {
       color: $text_color;

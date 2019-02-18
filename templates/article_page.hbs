@@ -1,9 +1,16 @@
-<div class="container-divider"></div>
+{{!-- <div class="container-divider"></div> --}}
+<div class="overarch">
+  <header class="primary-nav">
+      <div class="constrained">
+        <nav class="sub-nav tight">
+          {{breadcrumbs}}
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </nav>
+      </div>
+
+  </header>
+</div>
 <div class="container">
-  <nav class="sub-nav tight">
-    {{breadcrumbs}}
-    {{search scoped=settings.scoped_kb_search submit=false}}
-  </nav>
 
   <div class="article-container" id="article-container">
     {{!-- <section class="article-sidebar">
@@ -106,15 +113,15 @@
               {{vote 'up' role='radio' class='button article-vote article-vote-up'}}
               {{vote 'down' role='radio' class='button article-vote article-vote-down'}}
             </div>
-            <small class="article-votes-count">
+            {{!-- <small class="article-votes-count">
               {{vote 'label' class='article-vote-label'}}
-            </small>
+            </small> --}}
           </div>
         {{/with}}
 
-        <div class="article-more-questions">
+        {{!-- <div class="article-more-questions">
           {{request_callout}}
-        </div>
+        </div> --}}
         <div class="article-return-to-top">
           <a href="#article-container">{{t 'return_to_top'}}<span class="icon-arrow-up"></span></a>
         </div>
