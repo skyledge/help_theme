@@ -1,5 +1,5 @@
-<div class="container-divider"></div>
 <div class="error-page">
+  <img src="{{asset 'cloud-paddle.svg'}}" width="352px" height="auto">
   <h1>{{t 'oops'}}</h1>
 
   {{#is error 'unauthorized'}}
@@ -15,7 +15,7 @@
     <p>{{t 'mistyped_address_or_moved_page'}}</p>
   {{/is}}
 
-  {{#link 'help_center'}}
+  {{#link 'help_center' class="a-btn-link pad-top"}}
     {{t 'back_to_homepage'}}
   {{/link}}
 </div>

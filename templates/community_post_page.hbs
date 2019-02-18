@@ -1,9 +1,15 @@
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search scoped=settings.scoped_community_search submit=false}}
-  </nav>
+<div class="overarch">
+  <header class="primary-nav">
+      <div class="constrained">
+        <nav class="sub-nav tight">
+          {{breadcrumbs}}
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </nav>
+      </div>
+
+  </header>
+</div>
+<div class="container full-width">
 
   <div class="post-container">
     <div class="post">
@@ -212,7 +218,7 @@
     <section class="post-sidebar">
       <h3 class="sidebar-title">{{t 'suggest_new_post'}}</h3>
       <span class="post-to-community">
-        {{link 'new_post' role='button' class='button-large'}}
+        {{link 'new_post' role='button' class='a-btn cta-dims'}}
       </span>
     </section>
   </div>

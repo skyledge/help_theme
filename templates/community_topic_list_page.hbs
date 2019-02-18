@@ -1,13 +1,21 @@
-<section class="section hero community-hero">
-  <div class="hero-inner">
-    {{search submit=false class='search search-full' scoped=settings.scoped_community_search}}
-  </div>
+<section class="section hero" style="margin:0">
+  <section class="unit darkmode">
+    <h1  class="major-page-title">{{t 'community'}}</h1>
+    <p>Join the conversation! Collaborate and get inspired by Sky Ledgers around the world.</p>
+  </section>
 </section>
+<div class="overarch">
+  <header class="primary-nav">
+      <div class="constrained">
+        <nav class="sub-nav tight">
+          {{breadcrumbs}}
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </nav>
+      </div>
 
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-  </nav>
+  </header>
+</div>
+<div class="container full-width">
 
   <header class="page-header community-header">
     <h4>
@@ -26,7 +34,7 @@
       </span>
     </h4>
     <span class="post-to-community">
-      {{link 'new_post' role='button' class='a-btn'}}
+      {{link 'new_post' role='button' class='a-btn cta-dims'}}
     </span>
   </header>
 
@@ -82,6 +90,6 @@
 
   <section class="container community-footer">
     <h4>{{t 'suggest_new_post'}}</h4>
-    {{link 'new_post' role='button' class='button-large'}}
+    {{link 'new_post' role='button' class='a-btn cta-dims'}}
   </section>
 </div>

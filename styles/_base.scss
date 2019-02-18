@@ -167,6 +167,10 @@ textarea {
   @include max-width-container;
 }
 
+.full-width {
+  max-width: $max-page-width;
+}
+
 .container-divider {
   border-top: 1px solid $border-color;
   margin-bottom: 20px;
@@ -179,7 +183,16 @@ ul {
 }
 
 .error-page {
-  @include max-width-container;
+  // @include max-width-container;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+
+  .pad-top {
+    margin-top: 32px;
+  }
 }
 
 .dropdown-toggle {

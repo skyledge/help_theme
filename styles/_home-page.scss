@@ -163,12 +163,12 @@
 
 .still-need-help {
   margin-top: $margin-sm;
-  .raise-ticket {
-    font-weight: $font-weight-semibold;
-  
-    &:hover {
-      color: $color-accent;
-      text-decoration: none;
-    }
+}
+.a-btn-link {
+  font-weight: $font-weight-semibold;
+
+  &:hover {
+    color: $color-accent;
+    text-decoration: none;
   }
 }

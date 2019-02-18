@@ -140,3 +140,9 @@ button:active {
 .is-active-page {
   color: #ED9C3D !important;
 }
+
+.cta-dims {
+  max-height: $max-cta-btn-height;
+  padding: $margin-sm/4 $margin-sm !important;
+  height: 100%;
+}

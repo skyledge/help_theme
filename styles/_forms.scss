@@ -91,7 +91,7 @@
 
   input[type="submit"] {
     @include cta-btn();
-    height: 52px !important;
+    height: $max-cta-btn-height !important;
     padding: 0 !important;
     width: 100%;
   }

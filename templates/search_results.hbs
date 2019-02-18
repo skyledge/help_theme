@@ -1,12 +1,17 @@
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search submit=false}}
-  </nav>
+<div class="overarch">
+  <header class="primary-nav">
+      <div class="constrained">
+        <nav class="sub-nav tight">
+          {{breadcrumbs}}
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </nav>
+      </div>
 
+  </header>
+</div>
+<div class="container full-width">
   <header class="page-header">
-    <h1>{{t 'search_results'}}</h1>
+    <h1 class="major-page-title">{{t 'search_results'}}</h1>
     <p class="page-header-description">{{t 'results' query=query count=results_count}}</p>
   </header>
 

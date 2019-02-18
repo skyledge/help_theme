@@ -1,19 +1,26 @@
-<div class="container-divider"></div>
-<div class="container">
-   <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search scoped=settings.scoped_community_search submit=false}}
-  </nav>
+{{!-- <div class="container-divider"></div> --}}
+<div class="overarch">
+  <header class="primary-nav">
+      <div class="constrained">
+        <nav class="sub-nav tight">
+          {{breadcrumbs}}
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </nav>
+      </div>
+
+  </header>
+</div>
+<div class="container full-width">
 
   <header class="page-header">
-    <h1>
+    <h1 class="major-page-title">
       {{topic.name}}
       {{#if topic.internal}}
         <span class="icon-lock" title="{{t 'internal'}}"></span>
       {{/if}}
     </h1>
     <span class="post-to-community">
-      {{link 'new_post' role='button' topic_id=topic.id class='button button-large'}}
+      {{link 'new_post' role='button' topic_id=topic.id class='a-btn cta-dims'}}
     </span>
   </header>
   <div class="community-header">
@@ -105,5 +112,5 @@
 
 <section class="container community-footer">
   <h4>{{t 'suggest_new_post'}}</h4>
-  {{link 'new_post' role='button' class='button-large'}}
+  {{link 'new_post' role='button' class='a-btn cta-dims'}}
 </section>

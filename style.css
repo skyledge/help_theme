@@ -159,6 +159,10 @@ textarea:focus {
   }
 }
 
+.full-width {
+  max-width: 1440px;
+}
+
 .container-divider {
   border-top: 1px solid #ddd;
   margin-bottom: 20px;
@@ -171,16 +175,15 @@ ul {
 }
 
 .error-page {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 1160px) {
-  .error-page {
-    padding: 0;
-    width: 90%;
-  }
+.error-page .pad-top {
+  margin-top: 32px;
 }
 
 .dropdown-toggle {
@@ -338,6 +341,12 @@ button:active {
 
 .is-active-page {
   color: #ED9C3D !important;
+}
+
+.cta-dims {
+  max-height: 52px;
+  padding: 8px 32px !important;
+  height: 100%;
 }
 
 /***** Tables *****/
@@ -1369,11 +1378,11 @@ header.primary-nav.go-dark-bg {
   margin-top: 32px;
 }
 
-.still-need-help .raise-ticket {
+.a-btn-link {
   font-weight: 600;
 }
 
-.still-need-help .raise-ticket:hover {
+.a-btn-link:hover {
   color: #ff3366;
   text-decoration: none;
 }
@@ -4287,12 +4296,17 @@ header.primary-nav.go-dark-bg {
   margin: 0 0 5px 0;
   display: inline;
   line-height: 21px;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
   vertical-align: middle;
 }
 
 .profile-contribution-body {
-  margin: 10px 0;
+  margin: 16px 0;
+  font-family: $text_font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .profile-contribution-list > .profile-contribution {
